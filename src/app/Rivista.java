@@ -17,4 +17,8 @@ public class Rivista extends Elemento {
 		this.periodicità = periodicità;
 	}
 
+	public String toString() {
+		return "Nome rivista:" + titolo + " " + "Anno:" + anno;
+	}
+
 }

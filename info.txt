@@ -1,0 +1,7 @@
+Nome libro: Harry Potter IAutore: J.K.Rowling pubblicazione:2002 Genere: Fantasy
+Nome libro: Game Of ThronesAutore: George Martin pubblicazione:2005 Genere: Fantasy
+Nome libro: Una fortuna pericolosaAutore: Ken Follet pubblicazione:2010 Genere: Thriller
+Nome libro: Death NoteAutore: Takeshi Obata pubblicazione:2002 Genere: Mystery
+Nome rivista:Ciak MagazineAnno:2010
+Nome rivista:La settimana enigmisticaAnno:2000
+Nome rivista:Giallo ZafferanoAnno:2017

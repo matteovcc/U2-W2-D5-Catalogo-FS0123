@@ -1,12 +1,17 @@
 package app;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+
 public class Main {
+	private static File file = new File("info.txt");
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		System.out.println("LIBRI");
 		List<Libro> libri = new ArrayList<>();
 		Libro l1 = new Libro(978888L, "Harry Potter I", 2002, 187, "J.K.Rowling", "Fantasy");
@@ -82,6 +87,16 @@ public class Main {
 				.filter(libro -> libro.getAutore().equals("J.K.Rowling")).toList();
 		for (Libro libro : ricercaPerAutore) {
 			System.out.println("L'autore che cercavi è: " + " " + libro.getAutore());
+		}
+
+		// Salvataggio libri e riviste
+
+		try {
+			FileUtils.writeLines(file, "UTF-8", libri);
+			FileUtils.writeLines(file, "UTF-8", riviste, true);
+			System.out.println("salvataggio eseguito");
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
 	}

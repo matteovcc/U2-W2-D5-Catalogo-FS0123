@@ -27,4 +27,11 @@ public class Libro extends Elemento {
 		this.genere = genere;
 	}
 
+	@Override
+	public String toString() {
+		return "Nome libro:" + " " + titolo + "Autore: " + autore + " " + "pubblicazione:" + anno + " " + "Genere:"
+				+ " " + genere;
+
+	}
+
 }

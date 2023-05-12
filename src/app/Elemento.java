@@ -2,8 +2,8 @@ package app;
 
 public class Elemento {
 	private long isbn;
-	private String titolo;
-	private int anno;
+	protected String titolo;
+	protected int anno;
 	private int pagine;
 
 	public Elemento(long isbn, String titolo, int anno, int pagine) {
