@@ -1,12 +1,10 @@
 package app;
 
-import java.time.LocalDate;
-
 public class Libro extends Elemento {
 	private String autore;
 	private String genere;
 
-	public Libro(long isbn, String titolo, LocalDate anno, int pagine, String autore, String genere) {
+	public Libro(long isbn, String titolo, int anno, int pagine, String autore, String genere) {
 		super(isbn, titolo, anno, pagine);
 		// TODO Auto-generated constructor stub
 		this.autore = autore;

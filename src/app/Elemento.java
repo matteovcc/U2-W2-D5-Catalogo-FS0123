@@ -1,14 +1,12 @@
 package app;
 
-import java.time.LocalDate;
-
 public class Elemento {
 	private long isbn;
 	private String titolo;
-	private LocalDate anno;
+	private int anno;
 	private int pagine;
 
-	public Elemento(long isbn, String titolo, LocalDate anno, int pagine) {
+	public Elemento(long isbn, String titolo, int anno, int pagine) {
 		this.isbn = isbn;
 		this.titolo = titolo;
 		this.anno = anno;
@@ -31,11 +29,11 @@ public class Elemento {
 		this.titolo = titolo;
 	}
 
-	public LocalDate anno() {
+	public int getAnno() {
 		return anno;
 	}
 
-	public void setAnno(LocalDate anno) {
+	public void setAnno(int anno) {
 		this.anno = anno;
 	}
 
